@@ -5,7 +5,7 @@ import torch
 from multiprocessing import cpu_count
 from lib.modules import VC
 from lib.split_audio import split_silence_nonsilent, adjust_audio_lengths, combine_silence_nonsilent
-
+from lib.config import *
 
 def get_model(voice_model):
     model_dir = os.path.join(os.getcwd(), "models", voice_model)
