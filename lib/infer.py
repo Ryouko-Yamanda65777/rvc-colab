@@ -101,7 +101,7 @@ def infer_audio(
         print("Combining silence and inferred audios.")
         output_count = 1
         while True:
-            output_path = os.path.join(os.getcwd(), "output", f"{os.path.splitext(os.path.basename(audio_path))[0]}{model_name}{f0_method.capitalize()}_{output_count}.{audio_format}")
+            output_path = os.path.join(os.getcwd(), "output", f"{os.path.splitext(os.path.basename(audio_path))[0]} {model_name} {f0_method.capitalize()}_{output_count}.{audio_format}")
             if not os.path.exists(output_path):
                 break
             output_count += 1
